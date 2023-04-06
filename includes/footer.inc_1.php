@@ -4,5 +4,5 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 ?>
-        <footer><p> &copy;2022 Nolark - Créé par <a href="mailto:loufouanathanstewill@gmail.com">Nathan_Stéwill_LOUFOUA</a></p><p id="date"></p></footer>
+        <footer><p> &copy;2022 Nolark - Créé par <a href="mailto:nathan.stewill.loufoua@diderot-campus.fr">Nathan_Stéwill_LOUFOUA</a></p><p id="date"></p></footer>
         <script src="../js/index.js"></script>
