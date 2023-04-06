@@ -1,0 +1,85 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 19 janv. 2023, 12:47:57
+    Author     : loufo
+*/
+#contact {
+    text-align: left;
+    height: auto;
+    margin-bottom: 60px
+    /*min-height: 1720px;*/
+}
+
+#form_contact #coordo {
+    float: left;
+    margin-right: 50px;
+    width: auto;
+}
+
+#marques {
+    width: auto;
+}
+
+#coordo p {
+    text-align: right;
+    dominant-baseline: no-change;
+}
+
+#form_contact #motif #controles {
+    float: right;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#Controles input {
+    width: 26%
+    
+}
+
+input[type="email"]:valid {
+    color: green;
+}
+input[type="email"]:invalid {
+    color: red;
+}
+
+#reparecontact { height: 250px;}
+
+@media screen and (max-width: 480px) {
+    #reparecontact {
+        height: 60px;
+        display: none
+    }
+    
+    #form_contact #coordo {
+    float: left;
+    margin-right: auto;
+    width: auto;
+    }
+    
+    #Controles input {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    #reparecontact {
+        height: 60px;
+        display: none
+    }
+    
+    #form_contact #coordo {
+    float: left;
+    margin-right: auto;
+    width: auto;
+    }
+    
+    #Controles input {
+        width: auto;
+        margin-bottom: 10px;
+    }
+} 

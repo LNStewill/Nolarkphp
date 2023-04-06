@@ -1,0 +1,268 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 nov. 2022, 22:22:23
+    Author     : Nathan
+*/
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+
+
+
+/*header, section, footer {
+    border: black solid thin;
+    
+ 
+}*/
+header, nav, section, footer {
+    margin: 0 auto 0 auto;
+    width: 950px;
+   text-align: center; 
+} 
+
+header {
+    background-image: url('images/banniere.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 10px;
+    height: 250px;
+}
+
+nav {
+    float: left;
+    margin-top: 178px;
+    width: 100%;
+}
+nav li { display: inline; font-size: 150%;}
+nav li a {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav li a:hover { color: black; background-color: white;}
+
+#principal { height: 350px; }
+#principal article {
+    padding-top: 10px;
+    width: 72%;
+    height: 100%;
+    text-align: justify;
+    float: left;
+}
+#principal article img {
+    float: left;
+}
+
+#principal aside {
+    margin-top: 0;
+    background: transparent url('images/post-it-conseils.png') no-repeat 0 0;
+    vertical-align: top;
+    width: 27%;
+    float: right;
+    height: 100%;
+}
+
+#principal aside img:first-child { margin-top: 100px;}
+
+#principal aside img {
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    
+}
+
+#principal aside p {
+    margin-top: 0;
+}
+
+
+#sectthema {height: 400px; width: 70%;}
+#sectthema article {
+   /* border-color: cyan;
+    border-style: dotted;*/
+   border: transparent thin solid;
+}
+ #sectthema article {
+    /*width: 33%;*/
+    height: 256px;
+}
+#Gauche:hover, #Milieu:hover, #Droite:hover {
+    border: black thin solid;
+    border-radius: 10px;
+    background-color: #ededed;
+}
+
+
+#sectthema #Gauche {
+    float: left;
+    width: 30%;
+    /*margin-right: 15px;*/
+    background: transparent url('images/casqueroute.png') no-repeat center 10px;
+   /* border: thin solid white;*/
+}
+#sectthema #Milieu {
+    float: left;
+    width: 30%;
+    background: transparent url('images/casquecross.png') no-repeat center 0;
+    /*border: thin solid white; */
+}
+
+#sectthema #Droite {
+    float: right;
+    width: 30%;
+   /* margin-left: 5px;*/
+    background: transparent url('images/casquepiste.png') no-repeat center 10px;
+   /* border: thin solid white;*/
+}
+aside :hover {
+    background-color: gold;
+}
+
+h1 ::first-letter {
+    background-color: greenyellow;
+}
+
+section#video article {
+    float: left;
+    width: 45%;
+}
+section#video iframe {
+    float: right;
+    width: 45%;
+}
+#video article {
+    width: auto; 
+    padding-right: 10px;
+}
+#video article p {
+    text-align: justify;
+    padding-right: 10px;
+}
+#video article img {
+    float: left;
+    width: 35%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    /*height: 60px;*/
+    width: 100%;
+    background-color: #2d2d2d;
+    color: #bbb;
+    text-align: center;    
+}
+
+footer p{
+    margin-top: 1px;
+    color: #bbb;
+}
+footer a{
+    color: #bbb;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+td, td {
+  text-align: left;
+  padding: 10px;
+}
+
+@media screen and (max-width:480px) {
+    section#video article,section#video iframe {float: none;width: 100%;}
+    header { background-image: none; width: auto; margin: 0; height: 160px;}
+    section { width: auto; margin: 0; height: auto; }
+    nav { margin-top: 0; }
+    nav ul { margin-left: 0; margin-top: 0; padding-left: 0;}
+    nav li a {display: block; margin-top: 1px; height: 25px; padding: 1px;}
+    #principal { width: auto; height: auto;}
+    #principal article { width: auto; height: 100%; float: none;}
+    #principal aside { display: none;}
+    #sectthema { height: auto; margin: 0 auto 0 auto; width: 100%;}
+    #sectthema article { height: auto;}
+    #sectthema #Gauche, #sectthema #Milieu, #sectthema #Droite {/*background-image: none; width: 30%; float: left;*/ width: 30%;
+    margin: 2px;
+    float: left;
+    height: 200px;}
+    /*#video  { display: none;}*/
+    #reco #teammap {width: auto}
+    #teammap li {
+        display: none
+    }
+}
+
+/*Tablette*/
+@media screen and (min-width:480px) and (max-width:800px) {
+    
+   /* section#video {
+    margin-bottom: 600px;
+}*/
+
+    section#video article,section#video iframe {float: none; width: 100%;}
+    header { background-image: none; width: auto; margin: 0; height: 160px;}
+    /*#contact {height: 2500px;}*/
+    section { width: auto; margin: 0; height: auto; }
+    nav { margin-top: 0; }
+    nav ul { margin-left: 0; margin-top: 0; padding-left: 0;}
+    nav li a {display: block; margin-top: 1px; height: 25px; padding: 1px;}
+    #principal { width: auto; height: auto;}
+    #principal article { width: 60%; }
+    #principal aside { width: 236px; float: left;}
+    #sectthema { height: auto; margin: 0 auto 0 auto; width: 100%; clear: left;}
+    #sectthema article { height: auto;}
+    #sectthema #Gauche, #sectthema #Milieu, #sectthema #Droite {background-image: none; width: 30%; float: left;}
+    /*#video { display: none;}*/
+    /*#reco #teammap {width: auto;}
+    #teammap li {
+        display: none
+    }*/
+    /*#teammap {
+        width: auto !important;
+        margin: 0 auto 0 auto;
+        height:auto !important;
+        background-size:auto !important;
+        background-position:center center !important;
+        background-repeat:no-repeat !important;
+        padding-bottom:20%;
+        position:relative !important;
+    }
+
+    #teammap li a {
+        width:auto !important;
+        height:auto !important;
+        padding-top:auto !important;
+        padding-bottom:auto !important;
+        position:relative !important;
+        margin-bottom:10%;
+        margin-right:auto !important;
+        margin-left:auto !important;
+
+    }*/
+    
+}
+
+@media print {
+    body, #casques article p.marque { font-size: 15pt; font-family: serif;}
+    
+    header, nav, footer, #video, #casques article div.classement { display: none;}
+    
+    #casques article { width: 100%; height: 140px; margin: 0;}
+    #casques article img { float: left;}
+    #casques article p.prix, #casques article p.marque, #casques article p.modele, #casques article p.stockok, #casques article p.stockko { float: left; padding: 58.5px 10px;}
+    #casques article p.stockok, #casques article p.stockko { background-color: transparent; width: 200px;}
+    #casques article p.modele { width: 330px;}
+    
+    #casques article p.stockok abbr:after,    #casques article p.stockko abbr:after { text-transform: none; content: " : " attr(data-tip);}
+    #casques article p.stockok abbr:before { text-transform: none; content: "/!\\";}
+}
